@@ -32,14 +32,6 @@
     transition: all 0.3s ease;
 }
 
-.valentine-message::before,
-.valentine-message::after {
-    content: '❤';
-    position: absolute;
-    font-size: 1.5rem;
-    color: #e60000;
-}
-
 .valentine-message::before {
     left: 15px;
     top: 50%;
