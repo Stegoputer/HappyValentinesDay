@@ -25,7 +25,7 @@
     border-radius: 16px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     opacity: 0; /* Startet unsichtbar */
-    animation: fadeIn 2.5s ease-in-out 4s forwards, floatUp 4s ease-in-out infinite alternate 5s;
+    animation: fadeIn 2.5s ease-in-out 4.5s forwards, floatUp 4.5s ease-in-out infinite alternate 5s;
 }
 
 /* Sanftes Einblenden nach 3 Sekunden */
