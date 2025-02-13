@@ -9,21 +9,7 @@
 :root {
   --dark-color: #000;
 }
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #ffe6e6; 
-    overflow: hidden;
-}
-
-/* Nachricht oberhalb der Blumen */
+/* Nachrichten-Container */
 .valentine-message {
     position: absolute;
     top: 10%;
@@ -62,6 +48,7 @@ body {
         padding: 10px 20px;
     }
 }
+
 
 body {
   display: flex;
