@@ -9,9 +9,15 @@
     <title>HappyValentinesDay</title>
 </head>
 <body class="container">
-    <audio autoplay loop>
-  <source src="Song.m4a" type="audio/mp4">
-    </audio>
+      <source src="Song.m4a" type="audio/mp4">
+</audio>
+
+<script>
+  document.addEventListener('click', function() {
+    var music = document.getElementById('backgroundMusic');
+    music.play();
+  });
+</script>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
