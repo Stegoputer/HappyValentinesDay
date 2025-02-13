@@ -21,12 +21,42 @@
     text-align: center;
     font-family: 'Dancing Script', cursive;
     background: rgba(255, 255, 255, 0.9);
-    padding: 12px 24px;
-    border-radius: 16px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(230, 0, 0, 0.2), 0 6px 6px rgba(230, 0, 0, 0.1);
     opacity: 0; /* Startet unsichtbar */
     animation: fadeIn 2.5s ease-in-out 4.5s forwards, floatUp 4.5s ease-in-out infinite alternate 5s;
+    border: 2px solid #e60000;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
+
+.valentine-message::before,
+.valentine-message::after {
+    content: '❤';
+    position: absolute;
+    font-size: 1.5rem;
+    color: #e60000;
+}
+
+.valentine-message::before {
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.valentine-message::after {
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.valentine-message:hover {
+    transform: translate(-50%, -52%) scale(1.05);
+    box-shadow: 0 15px 30px rgba(230, 0, 0, 0.3), 0 10px 10px rgba(230, 0, 0, 0.2);
+}
+
 
 /* Sanftes Einblenden nach 3 Sekunden */
 @keyframes fadeIn {
