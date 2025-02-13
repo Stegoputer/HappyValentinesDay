@@ -9,6 +9,59 @@
 :root {
   --dark-color: #000;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ffe6e6; 
+    overflow: hidden;
+}
+
+/* Nachricht oberhalb der Blumen */
+.valentine-message {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e60000; /* Romantisches Rot */
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 24px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0; /* Startet unsichtbar */
+    animation: fadeIn 2s ease-in-out 3s forwards, floatUp 3s ease-in-out infinite alternate 5s;
+}
+
+/* Sanftes Einblenden nach 3 Sekunden */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Leichtes Schweben (startet nach dem Einblenden) */
+@keyframes floatUp {
+    0% { transform: translate(-50%, -50%) translateY(0); }
+    100% { transform: translate(-50%, -50%) translateY(-10px); }
+}
+
+/* Anpassung für mobile Geräte */
+@media (max-width: 768px) {
+    .valentine-message {
+        font-size: 2rem;
+        top: 15%;
+        padding: 10px 20px;
+    }
+}
 
 body {
   display: flex;
